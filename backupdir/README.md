@@ -605,13 +605,7 @@ tar -cvf backup.tar *
 ```
 LICENSE
 README.md
-file1
-file11
-file2
-file21
-file22
-file23
-newfile
+test.txt
 ```
 mkdir backupdir
  
@@ -620,39 +614,20 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 
 ## OUTPUT
-```
--rw-r--r-- santhosh/santhosh 35149 2024-10-26 11:58 LICENSE
--rw-r--r-- santhosh/santhosh 49208 2024-10-26 12:25 README.md
--rw-r--r-- santhosh/santhosh 1443  2024-09-20 09:15 file1
--rw-r--r-- santhosh/santhosh 7980  2024-09-21 10:47 file11
--rw-r--r-- santhosh/santhosh 2153  2024-09-22 08:56 file2
--rw-r--r-- santhosh/santhosh 3187  2024-09-23 09:07 file21
--rw-r--r-- santhosh/santhosh 4862  2024-09-24 19:45 file22
--rw-r--r-- santhosh/santhosh 5620  2024-09-25 21:15 file23
--rw-r--r-- santhosh/santhosh 3294  2024-09-26 16:33 newfile
+(OS_ex1_3.png)
 
-```
 
 tar -xvf backup.tar
 ## OUTPUT
-```
-LICENSE
-README.md
-file1
-file11
-file2
-file21
-file22
-file23
-newfile
-```
+(OS_ex1_4.png)
+
 gzip backup.tar
 
 ls .gz
 
 ## OUTPUT
  ```
- argshift1.sh   file11        fornested1.sh  
+ argshift1.sh   file11        fornested1.sh  OS-Linux-commands-Shell-script
 argshift.sh    file2         funcex.sh      palindrome.sh
 backupdir      file21        herecheck.txt  psswdperm.sh
 backup.tar.gz  file22        ifcompound.sh  scriptest.sh
@@ -669,7 +644,8 @@ gunzip backup.tar.gz
 
 ## OUTPUT
 ```
-argshift1.sh   file11        fornested1.sh  argshift.sh    file2         funcex.sh      palindrome.sh
+argshift1.sh   file11        fornested1.sh  OS-Linux-commands-Shell-script
+argshift.sh    file2         funcex.sh      palindrome.sh
 backupdir      file21        herecheck.txt  psswdperm.sh
 backup.tar.gz  file22        ifcompound.sh  scriptest.sh
 casecheck.sh   file23        ifnested1.sh   strcomp.sh
@@ -680,9 +656,8 @@ exread1.sh     forin2.sh     nc.awk         whiletest.sh
 exread.sh      forin3.sh     newfile
 file1          forinfile.sh  one
 santhosh@Santhosh:~/os/exp/ex1/OS-Linux-commands-Shell-script$ gunzip backup.tar.gz
-
 santhosh@Santhosh:~/os/exp/ex1/OS-Linux-commands-Shell-script$ ls
-argshift1.sh  file11        fornested1.sh  
+argshift1.sh  file11        fornested1.sh  OS-Linux-commands-Shell-script
 argshift.sh   file2         funcex.sh      palindrome.sh
 backupdir     file21        herecheck.txt  psswdperm.sh
 backup.tar    file22        ifcompound.sh  scriptest.sh
@@ -975,7 +950,7 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-## OUTPUT
+##OUTPUT
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -1018,7 +993,6 @@ echo "I cannot write to the file"
 fi
 ```
 $ chmod 755 ifcompound.sh
-
 $ ./ifcompound.sh 
 ## OUTPUT
 
@@ -1143,11 +1117,7 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
-
 $ cat cities
-## OUTPUT
-
-```
 Hyderabad
 Alampur
 Basara
@@ -1155,7 +1125,8 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
-```
+
+## OUTPUT
 
 
 cat forctype.sh 
@@ -1181,7 +1152,6 @@ echo "$a - $b"
 done
 ```
 $ chmod 755 forctype.sh
-
 $ ./forctype1.sh 
 ## OUTPUT
 
@@ -1396,6 +1366,7 @@ else
 	echo "Number is NOT palindrome"
 fi
 ```
+## OUTPUT 
 
 
 # RESULT:
